@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root {
+    --bg-principal: #105d9c;
+    --cor-fonte: #FFFFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid rgb(201, 183, 183);
+    padding: 5px;
+}
+
+label {
+    margin: 0.5em 0;
+}
+
+.cabecalho {
+    background-color: var(--bg-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.titulo-cabecalho {
+    color: var(--cor-fonte);
+}
+
+.secao-formulario, .tabela {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.container-formulario--nome, .container-formulario--aniversario {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+
+.td-acao {
+    display: flex;
+}
+
+.tr-editar {
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+.tr-deletar {
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.tr-editar:hover {
+    color: rgb(34, 105, 1);
+    transition-delay: 50ms;
+    transition-duration: 1000ms;
+}
+
+.conteudo-nome {
+    color: rgb(255, 0, 0);
+    display: none;
+    font-size: 16px;
+}
+
+.form-field {
+    background-color: hsl(180, 6%, 88%);
+    border: 1px solid white;
+    border-radius: 8px;
+    height: 5vh;
+    padding: 8px;
+}
+
+.botao {
+    width: 30%;
+    margin: 2em 0;
+    background-color: #05be4c;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 7vh;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.texto-confirmado {
+    color: #05be4c;
+    margin-bottom: 0.5em;
+    display: none;
+}
+
+.rodape {
+    background-color: var(--bg-principal);
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.rodape-titulo {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.rodape-github, .rodape-instagram {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.rodape-texto--github, .rodape-texto--instagram {
+    color: #FFFFFF;
+    text-decoration-line: none;
+}
+
+.rodape-texto--github:hover, .rodape-texto--instagram:hover {
+    color: rgb(0, 0, 0);
+}
