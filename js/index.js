@@ -69,7 +69,7 @@ function salvarPessoa () {
             aniversario: aniversarioPessoaFormatada
         })
     }
-    console.log(listaDePessoas)
+    
 }
 
 function exibirMensagem (texto, cor) {
@@ -160,7 +160,7 @@ function validarNomeEditado (index) {
     if(nomeAlterado && aniversarioAlterado !== null) {
         const aniversarioAlteradoFormatado = validarAniversarioEditado(aniversarioAlterado)
         if(aniversarioAlteradoFormatado) {
-            console.log(aniversarioAlteradoFormatado)
+            
             listaDePessoas[index].nome = nomeAlterado;
             listaDePessoas[index].aniversario = aniversarioAlteradoFormatado;
             salvarDados()
@@ -199,7 +199,7 @@ function validarAniversarioEditado(data) {
             return data;
     }
 }
- 
+
 function mostraTabelaCabecalho () {
     const trCabecalho = document.createElement("tr")
     const cabecalhoNome = document.createElement("th")
@@ -223,7 +223,7 @@ function formatarDataAniversario(data) {
     const mesAtual = (criarDataEspecifica.getMonth() +1).toString().padStart(2, "0")
     const anoAtual = criarDataEspecifica.getFullYear()
 
-    console.log(anoAtual)
+    
     return `${diaAtual}/${mesAtual}/${anoAtual}`
 }
 
