@@ -99,6 +99,12 @@ label {
     height: 7vh;
     font-size: 1em;
     cursor: pointer;
+    opacity: 0.9;
+    transition: 0.4s;
+}
+
+.botao:hover {
+    opacity: 2;
 }
 
 .texto-confirmado {
@@ -134,4 +140,19 @@ label {
 
 .rodape-texto--github:hover, .rodape-texto--instagram:hover {
     color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 515px) {
+    .rodape {
+        flex-direction: column;
+        gap: 2em;
+    }
+    
+    .rodape-titulo {
+        font-size: 18px;
+    }
+
+    .rodape-texto--github, .rodape-texto--instagram {
+        font-size: 14px;
+    }
 }

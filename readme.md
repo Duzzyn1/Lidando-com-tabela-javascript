@@ -1,3 +1,11 @@
+#O código abaixo é um código antigo da primeira vez que fiz esse projeto.
+
+Esse projeto foi concluido pela primeira vez em 27/07/2023 e sofreu modificações no dia -----
+foi modificado para uma legibilidade melhor e para uma melhor experiência
+
+
+
+~~~javascript 
 const botaoEnviar = document.querySelector("#botao-js")
 
 exibirDadosNaTela()
@@ -117,3 +125,4 @@ function formatarData (data) {
 
     return `${dia}/${mes}/${ano}`
 }
+~~~
