@@ -227,11 +227,6 @@ function formatarDataAniversario(data) {
     return `${diaAtual}/${mesAtual}/${anoAtual}`
 }
 
-
-
-
-
-
 // o código abaixo remove parametros de consulta da url
 // pega a url atual
 const urlAtual = window.location.href;
